@@ -28,10 +28,9 @@ public class TimeLine {
             arr[i][1] = sc.nextInt();
         }
         
-        int [][] mergedIntervals = merge(arr);
-        //print merged intervals
-        for (int i = 0; i < mergedIntervals.length; i++) {
-            System.out.println(mergedIntervals[i][0] + " " + mergedIntervals[i][1]);
+        int [][] merged = merge(arr);
+        for (int i = 0; i < merged.length; i++) {
+            System.out.println(merged[i][0] + " " + merged[i][1]);
         }
     }    
 }
